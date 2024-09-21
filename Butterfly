@@ -1,28 +1,31 @@
+// Online C compiler to run C program online
 #include <stdio.h>
 
 int main() {
-    // Write C code here
     int n,i,j,k;
-    printf("ENTER THE SIZE OF UPPER LEFT WING");
+    char ch;
+    printf("ENTER THE SIZE OF UPPER LEFT WING-");
     scanf("%d",&n);
+    printf("ENTER THE CHARACTER OF WHICH THE WING WILL BE MADE OF-");
+    scanf(" %c",&ch);
  for( i=1;i<=n;i++)
  {
      for( j=1;j<=i;j++)
-     printf("*");
+     printf("%c",ch);
      for( k=1;k<=(2*n)-(2*i);k++)
      printf(" ");
      for( j=1;j<=i;j++)
-     printf("*");
+     printf("%c",ch );
      printf("\n");
  }
   for( i=1;i<n;i++)
   {
       for(int j=n;j>i;j--)
-      printf("*");
+     printf("%c",ch );
       for( k=1;k<=2*i;k++)
       printf(" ");
       for(int j=n;j>i;j--)
-          printf("*");
+    printf("%c",ch );
       printf("\n");
   }
  
